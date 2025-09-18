@@ -11,12 +11,22 @@ Exercises
 from random import randrange
 from turtle import *
 
+from random import choice
+
 from freegames import square, vector
 
 food = vector(0, 0)
 snake = [vector(10, 0)]
 aim = vector(0, -10)
 
+def move_food(food):
+    dx = choice([-10, 0, 10])
+    dy = choice([-10, 0, 10])
+    new_x = food.x + dx
+    new_y = food.y + dy
+    new_x = max(-200, min(200, new_x))
+    new_y = max(-200, min(200, new_y))
+    food.goto(new_x, new_y)
 
 def change(x, y):
     """Change snake direction."""
