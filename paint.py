@@ -59,10 +59,10 @@ def rectangle(start, end):
     height = end.y - start.y
     
     for _ in range(2):
-	forward(width)
-	left(90)
-	forward(height)
-	left(90)
+		     forward(width)
+	             left(90)
+		     forward(height)
+	             left(90)
     end_fill()
 
 def triangle(start, end):
