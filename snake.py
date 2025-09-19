@@ -17,10 +17,10 @@ food = vector(0, 0)
 snake = [vector(10, 0)]
 aim = vector(0, -10)
 
-#colors = ['blue', 'yellow', 'purple', 'orange', 'pink']
+colors = ['blue', 'yellow', 'purple', 'orange', 'pink']
 
-#color_serpiente = choice(colors)
-#color_comida = choice([c for c in colors if c != snake_color])
+color_serpiente = choice(colors)
+color_comida = choice([c for c in colors if c != snake_color])
 
  move_food(food):
     dx = choice([-10, 0, 10])
@@ -64,9 +64,9 @@ def move():
     clear()
 
     for body in snake:
-        square(body.x, body.y, 9, 'black')
+        square(body.x, body.y, 9, color_serpiente)
 
-    square(food.x, food.y, 9, 'green')
+    square(food.x, food.y, 9, color_comida)
     update()
     ontimer(move, 100)
 
