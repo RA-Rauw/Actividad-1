@@ -69,22 +69,6 @@ def rectangle(start, end):
 def triangle(start, end):
     """Draw triangle from start to end."""
     up()
-    goto(start.x, start.y)
-    down()
-    begin_fill()
-    width = end.x - start.x
-    height = end.y - start.y
-    
-    for _ in range(2):
-		     forward(width)
-	           left(90)
-		     forward(height)
-	           left(90)
-    end_fill()
-
-def triangle(start, end):
-    """Draw triangle from start to end."""
-    up()
     goto(start.x,start.y)
     down()
     begin_fill()
@@ -95,8 +79,6 @@ def triangle(start, end):
 		forward(side)
 		left(120)
     end_fill()
->>>>>>> Triangulo
-
 
 def tap(x, y):
     """Store starting point or draw shape."""
