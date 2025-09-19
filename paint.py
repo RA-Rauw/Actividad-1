@@ -51,12 +51,11 @@ def circle(start, end):
 
 def rectangle(start, end):
     """Draw rectangle from start to end."""
-    pass  # TODO
-
+	#Aquí se agregará código para completar el rectángulo
 
 def triangle(start, end):
     """Draw triangle from start to end."""
-    pass  # TODO
+    #Aquí se agregará código para completar el triángulo
 
 
 def tap(x, y):
