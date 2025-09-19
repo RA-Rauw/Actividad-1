@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 """Paint, for drawing shapes.
 #TODO
+=======
+git pull origin main"""Paint, for drawing shapes.
+
+>>>>>>> Triangulo
 Exercises
 
 1. Add a color.
@@ -51,11 +56,41 @@ def circle(start, end):
 
 def rectangle(start, end):
     """Draw rectangle from start to end."""
+<<<<<<< HEAD
 	#Aquí se agregará código para completar el rectángulo
 
 def triangle(start, end):
     """Draw triangle from start to end."""
     #Aquí se agregará código para completar el triángulo
+=======
+    up()
+    goto(start.x, start.y)
+    down()
+    begin_fill()
+    width = end.x - start.x
+    height = end.y - start.y
+    
+    for _ in range(2):
+		     forward(width)
+	           left(90)
+		     forward(height)
+	           left(90)
+    end_fill()
+
+def triangle(start, end):
+    """Draw triangle from start to end."""
+    up()
+    goto(start.x,start.y)
+    down()
+    begin_fill()
+    
+    side = sqrt.((end.x - start.x)**2 + (end.y - start.y)**2)
+	
+    for _ in range(3):
+		forward(side)
+		left(120)
+    end_fill()
+>>>>>>> Triangulo
 
 
 def tap(x, y):
