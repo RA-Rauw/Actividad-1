@@ -53,7 +53,9 @@ def rectangle(start, end):
     """Draw rectangle from start to end."""
     #up()
     #goto(start.x, start.y)
-    pass 
+    #down()
+    #begin_fill()
+    pass
 
 def triangle(start, end):
     """Draw triangle from start to end."""
