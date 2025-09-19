@@ -60,14 +60,24 @@ def rectangle(start, end):
     
     for _ in range(2):
 		     forward(width)
-	             left(90)
+	           left(90)
 		     forward(height)
-	             left(90)
+	           left(90)
     end_fill()
 
 def triangle(start, end):
     """Draw triangle from start to end."""
-    pass  # TODO
+    up()
+    goto(start.x,start.y)
+    down()
+    begin_fill()
+    
+    side = sqrt.((end.x - start.x)**2 + (end.y - start.y)**2)
+	
+    for _ in range(3):
+		forward(side)
+		left(120)
+    end_fill()
 
 
 def tap(x, y):
