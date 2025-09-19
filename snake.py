@@ -1,5 +1,3 @@
-"""Snake, classic arcade game.
-
 Exercises
 
 1. How do you make the snake faster or slower?
@@ -19,7 +17,10 @@ food = vector(0, 0)
 snake = [vector(10, 0)]
 aim = vector(0, -10)
 
-def move_food(food):
+#def cambiar_colores:
+#Aquí se agregá que cada vez que corra el jugeo, la vibora y comida deberán tener colores diferentes entre sí, pero al azar, de una serie de 5 diferentes colores, excepto el rojo.
+
+ move_food(food):
     dx = choice([-10, 0, 10])
     dy = choice([-10, 0, 10])
     new_x = food.x + dx
